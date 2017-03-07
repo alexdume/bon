@@ -1,0 +1,5 @@
+{
+    "require": {
+        "drmonkeyninja/cakephp-font-awesome": "3.*"
+    }
+}
