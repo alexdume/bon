@@ -22,6 +22,7 @@
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('city') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('country') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('permission') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('singup') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
@@ -37,6 +38,7 @@
                 <td><?= h($user->password) ?></td>
                 <td><?= h($user->city) ?></td>
                 <td><?= h($user->country) ?></td>
+                <td><?= $this->Number->format($user->permission) ?></td>
                 <td><?= h($user->singup) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>

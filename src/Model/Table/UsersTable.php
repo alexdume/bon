@@ -81,9 +81,9 @@ class UsersTable extends Table
             ->notEmpty('country');
 
         $validator
-            ->date('singup')
-            ->requirePresence('singup', 'create')
-            ->notEmpty('singup');
+            ->integer('permission')
+            ->requirePresence('permission', 'create')
+            ->notEmpty('permission');
 
         return $validator;
     }

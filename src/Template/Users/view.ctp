@@ -48,6 +48,10 @@
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Permission') ?></th>
+            <td><?= $this->Number->format($user->permission) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Singup') ?></th>
             <td><?= h($user->singup) ?></td>
         </tr>
