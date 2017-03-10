@@ -10,7 +10,7 @@
                              <li>
                                  <?php echo $this->Html->link(
                                     'Register',
-                                    ['controller' => 'Users', 'action' => 'register']
+                                    ['controller' => 'Users', 'action' => 'registration']
                                 );
                                 ?>
                             </li>
