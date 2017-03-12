@@ -1,6 +1,6 @@
 <?php echo $this->Html->css(['register', 'bootstrap.min', 'font-awesome.min', 'style', 'responsive']); ?>
- <?php echo $this->element('branding_area'); ?>
- <?php echo $this->element('menu'); ?>
+<?php echo $this->element('branding_area'); ?>
+<?php echo $this->element('menu'); ?>
 <div class="product-big-title-area">
     <div class="container">
         <div class="row">
@@ -142,7 +142,7 @@
         ?>
         </div>
     </div>
-    <div class="form row">
+    <div class="form row" align="center">
         <div class="col-md-12">
             <?php echo $this->Form->input('Register',
             array(

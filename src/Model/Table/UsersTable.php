@@ -79,12 +79,6 @@ class UsersTable extends Table
         $validator
             ->requirePresence('country', 'create')
             ->notEmpty('country');
-
-        $validator
-            ->integer('permission')
-            ->requirePresence('permission', 'create')
-            ->notEmpty('permission');
-
         return $validator;
     }
 
