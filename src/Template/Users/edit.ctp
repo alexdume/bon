@@ -28,6 +28,7 @@
             echo $this->Form->control('city');
             echo $this->Form->control('address');
             echo $this->Form->control('country');
+            echo $this->Form->control('permission');
             echo $this->Form->control('singup');
         ?>
     </fieldset>

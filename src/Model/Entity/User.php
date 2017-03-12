@@ -16,6 +16,7 @@ use Cake\Auth\DefaultPasswordHasher;
  * @property string $city
  * @property string $address
  * @property string $country
+ * @property int $permission
  * @property \Cake\I18n\Time $singup
  */
 class User extends Entity
@@ -35,17 +36,7 @@ class User extends Entity
         'id' => false
     ];
 
-    /**
-     * Fields that are excluded from JSON versions of the entity.
-     *
-     * @var array
-     */
-    protected $_hidden = [
-        'password'
-    ];
-
-    protected function _setPassword($pass) {
-        $hasher = new DefaultPasswordHasher();
-        return $hasher->hash($pass);
+    protected function _setPassword($password){
+        return (new DefaultPasswordHasher)->hash($password);
     }
 }

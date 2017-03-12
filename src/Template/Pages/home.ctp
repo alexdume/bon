@@ -20,7 +20,9 @@
     <![endif]-->
   </head>
   <body> 
-   <?php echo $this->element('menu'); ?>
+    <?php echo $this->element('top_menu'); ?>
+    <?php echo $this->element('branding_area'); ?>
+    <?php echo $this->element('menu'); ?>
     <div class="slider-area">
             <!-- Slider -->
             <div class="block-slider block-slider4">

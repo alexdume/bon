@@ -1,0 +1,29 @@
+
+.form-style .label {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background: #5a88ca;
+	width: 500px;
+	font-size: 18px;
+}
+
+.form-style input[type="text"], .form-style input[type="password"], .form-style input[type="email"], .form-style textarea {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 500px;
+}
+
+.form-style{
+	border-radius: 5px;
+    background-color: #fbfbfb;
+    padding: 20px;
+	position: absolute;
+    left: 30%;
+}
+
+.form-style input[type="submit"] {
+	margin-top: 20px;
+}
