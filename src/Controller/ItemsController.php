@@ -30,7 +30,12 @@ class ItemsController extends AppController
      */
     public function view($id = null)
     {
-       
+       $product = $this->Items->get($id, [
+            'contain' => []
+        ]);
+
+        $this->set('product', $product);
+        $this->set('_serialize', ['product']);
     }
 
     /**

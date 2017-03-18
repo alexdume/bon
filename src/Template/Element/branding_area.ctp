@@ -6,7 +6,7 @@
                         <h1>
                             <?php
                             echo $this->Html->link(
-                                $this->Html->image("logobon.png", ["alt" => "logo"]),
+                                $this->Html->image("bon3.png", ["alt" => "logo"]),
                                 "recipes/view/6",
                                 ['escape' => false]
                             );
